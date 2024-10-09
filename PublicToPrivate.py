@@ -4,6 +4,7 @@ import requests
 username = "" 
 token = ""
 
+print(f'Created by cozy')
 # Get the list of repositories
 response = requests.get(f"https://api.github.com/users/{username}/repos", auth=(username, token))
 
@@ -26,4 +27,4 @@ if response.status_code == 200:
 else:
     print("Failed to fetch repositories.")
 
-Print(f'Created by cozy')
+
